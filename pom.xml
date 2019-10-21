@@ -66,6 +66,16 @@
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-maven-plugin</artifactId>
 				</plugin>
+				<configuration>
+            		<mainClass>com.boot.App</mainClass>
+        		</configuration>
+				<executions>
+            		<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+            		</execution>
+				</executions>
 				<!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
 				<plugin>
 					<artifactId>maven-clean-plugin</artifactId>
